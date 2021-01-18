@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cartoons",
+      "handler": "cartoon.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cartoons/count",
+      "handler": "cartoon.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cartoons/:id",
+      "handler": "cartoon.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cartoons",
+      "handler": "cartoon.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cartoons/:id",
+      "handler": "cartoon.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cartoons/:id",
+      "handler": "cartoon.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
